@@ -130,4 +130,4 @@ This image represents the output table view from the teacher dashboard, showing 
 
 # RESULT
 
-Thus, a comprehensive plan and conceptual code for an AI-based Classroom Attendance System using face recognition, deep learning embeddings, and a web dashboard has been defined. The system is designed to automatically detect, recognize, and log student presence, fulfilling all stated project obje
+Thus, a comprehensive plan and conceptual code for an AI-based Classroom Attendance System using face recognition, deep learning embeddings, and a web dashboard has been defined. The system is designed to automatically detect, recognize, and log student presence, fulfilling all stated project object.
