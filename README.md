@@ -4,12 +4,11 @@
 AI-Attendance-System/README.md
 
 AI-based Classroom Attendance from Face Recognition
-
-AIM
+## AIM
 
 To build a system that automatically marks classroom attendance using AI-based face recognition, reducing manual roll call time and improving accuracy.
 
-THEORY
+## THEORY
 
 Neural Network Model
 
@@ -21,7 +20,7 @@ Feature Embedding: The recognized face is passed through the CNN to generate a u
 
 Recognition/Verification: The generated embedding is compared using Euclidean Distance against the stored embeddings of registered students. A distance below a set threshold signifies a match and marks the student as Present.
 
-DESIGN STEPS
+## DESIGN STEPS
 
 STEP 1:
 Enrollment Module: Capture multiple images of a student, detect the face, and generate a unique 128-D embedding vector. Store this vector alongside the student ID in the database (Firestore).
@@ -38,17 +37,20 @@ Database Integration (Firestore): Use Google Firestore to manage two main collec
 STEP 5:
 Web Dashboard Development: Build a teacher dashboard (using HTML/JS/Tailwind) to securely view the AttendanceLogs, correct errors, filter by date, and export data as CSV.
 
-PROGRAM
+## PROGRAM
 
-Name: DINESH S
+## Name: DINESH S
 
-Register Number: 212222230033
+## Register Number: 212222230033
 
 This is a conceptual Python script outlining the core logic using standard libraries.
+
+```
 
 import cv2
 import face_recognition # Assumes installation of DLib/face_recognition
 import numpy as np
+```
 # Placeholder for Firebase/Firestore imports
 
 # --- STEP 1: Load Enrolled Data ---
@@ -110,19 +112,22 @@ def process_live_attendance(known_encodings, known_names):
     cv2.destroyAllWindows()
 
 # --- Main Execution ---
+
+```
 if _name_ == "_main_":
     # db_client = initialize_firestore_client() # Placeholder
     known_encodings, known_names = load_known_faces(None)
     # process_live_attendance(known_encodings, known_names)
     print("System Ready. Run the process_live_attendance function to start camera feed.")
 
+```
 
-OUTPUT:
+## OUTPUT:
 
 Attendance Report Snapshot
 
 This image represents the output table view from the teacher dashboard, showing student IDs, names, status (Present/Absent), and a timestamp, demonstrating the final result of the system.
 
-RESULT
+# RESULT
 
 Thus, a comprehensive plan and conceptual code for an AI-based Classroom Attendance System using face recognition, deep learning embeddings, and a web dashboard has been defined. The system is designed to automatically detect, recognize, and log student presence, fulfilling all stated project obje
